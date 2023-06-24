@@ -11,9 +11,9 @@ const NoteSchema =  mongoose.Schema({
     },
     userId: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'User',
+        ref: 'user',
         required: true
     },
 }, {timestamps: true})
 
-module.exports = mongoose.model('Note', NoteSchema)
+module.exports = mongoose.model('note', NoteSchema)
